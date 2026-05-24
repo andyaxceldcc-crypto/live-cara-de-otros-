@@ -1,0 +1,45 @@
+# DeepFaceLive - Requirements
+# Python 3.9+ required (Python 3.10-3.12 recommended for best compatibility)
+
+# Core numerical and image processing
+numpy>=1.21.6,<2.0.0
+opencv-python>=4.8.0.74
+opencv-contrib-python>=4.8.0.74
+Pillow>=9.0.0
+
+# ONNX Runtime (choose one based on your hardware)
+# For NVIDIA GPU with CUDA 11.x
+onnxruntime-gpu>=1.15.1
+# For AMD GPU (ROCm) - Linux only
+# onnxruntime-rocm>=1.15.1
+# For CPU only (no GPU)
+# onnxruntime>=1.15.1
+
+# ONNX
+onnx>=1.14.0
+
+# Deep Learning frameworks
+torch>=1.13.1
+torchvision>=0.14.1
+
+# Model serialization
+h5py>=3.7.0
+protobuf>=3.20.1,<4.0.0
+numexpr>=2.8.0
+
+# GUI Framework (choose based on your OS)
+# PyQt6 for most systems (recommended)
+PyQt6>=6.5.1
+# PyQt5 as alternative
+# PyQt5>=5.15.0
+
+# FFmpeg (system package - install via your package manager)
+# Ubuntu/Debian: sudo apt install ffmpeg
+# Fedora: sudo dnf install ffmpeg
+# Arch: sudo pacman -S ffmpeg
+# macOS: brew install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html
+
+# Optional but recommended
+scipy>=1.9.0
+scikit-image>=0.19.0
